@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>تقييم الطلاب</title>
+
+    
+</head>
+
+<body>
+    <div class="teacher-setting-box">
+        <span class="teacher-setting-label">المعلم</span>
+        <input type="text" class="teacher-setting-input">
+    </div>
+    
+    <div class="class-setting-box">
+        <span class="date-setting-label">الصف</span>
+        <input type="text" class="info-input" id="Class">
+    </div>
+
+    <div class="subject-setting-box">
+        <span class="info-label">المادة</span>
+        <input type="text" class="info-input" id="Subject">
+    </div>
+
+    <div class="info-box">
+        <span class="info-label">الامتحان</span>
+        <input type="text" class="info-input" id = "testName" >
+    </div>
+    
+    <div class="info-box">
+        <span class="info-label">عدد الطلاب</span>
+        <input type="number" class="info-input" id="totalStudents" >
+    </div>
+    
+    <div class="date-setting-box">
+        <span class="date-setting-label">تحديد التاريخ</span>
+        <input type="date" class="date-setting-input">
+    </div>
+
+    
+    
+    
+    <form id="testForm">
+        <table id="questionsTable">
+            <thead>
+                <tr>
+                    <th>الهدف</th>
+                    <th>عدد الطلاب الذين حققوا الهدف</th>
+                    <th>نسبة الطلاب الذين حققوا الهدف</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <button type="button" id="addObjective">إضافة هدف</button>
+        <input type="submit" value="تقديم" id="submission">
+
+    </form>
+    <!-- Add these divs to your HTML structure -->
+    <div id="highestPercentageBox" class="percentage-box">
+        <h3>الهدف/الأهداف الأكثر تحقيقًا</h3>
+        <div id="highestPercentageValue"></div>
+    </div>
+
+    <div id="lowestPercentageBox" class="percentage-box">
+        <h3>الهدف/الأهداف الأقل تحقيقًا</h3>
+        <div id="lowestPercentageValue"></div>
+    </div>
+    <div id="generatePdfButton">PDF إنشاء ملف</div>
+
+    <script>
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
